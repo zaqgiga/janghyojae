@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		table {text-align:center;}
+	</style>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>가입양식</legend>
+			<table border="1" width="500">
+				<tr>
+					<td>
+						<label for="userid">아이디</label>
+					</td>
+					<td>
+						<input type="text" id="userid">
+						<input type="button" value="중복확인">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="userpw">비밀번호</label>
+					</td>
+					<td>
+						<input type="password" id="userpw">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="userpw2">비번확인</label>
+					</td>
+					<td>
+						<input type="password" id="userpw2">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="m">성별</label>
+					</td>
+					<td>
+						<input type="radio" name="sex" id="m">
+						<label for="m">남자</label>
+						<input type="radio" name="sex" id="w">
+						<label for="w">여자</label>
+						<input type="radio" name="sex" id="d">
+						<label for="d">중성</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						연락처
+					</td>
+					<td>
+						<select>
+							<option value="KT">KT</option>
+							<option value="SKT">SKT</option>
+							<option value="LG">LG</option>
+							<option value="알뜰폰">알뜰폰</option>
+						</select>
+						<select>
+							<option value="010">010</option>
+							<option value="011">011</option>
+							<option value="016">016</option>
+							<option value="019">019</option>
+						</select>-
+						<input type="text" size="4">-
+						<input type="text" size="4">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						이메일
+					</td>
+					<td>
+						<input type="text" size="5">@
+						<select>
+							<option value="select">선택해주세요.</option>
+							<option value="naver">naver.com</option>
+							<option value="yahoo">yahoo.com</option>
+							<option value="daum">daum.net</option>
+							<option value="google">google.com</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="soccer">취미</label>
+					</td>
+					<td>
+						<input type="checkbox" id="soccer" name="soccer">
+						<label for="soccer">축구</label>
+						<input type="checkbox" id="basketball" name="basketball">
+						<label for="basketball">농구</label>
+						<input type="checkbox" id="bassball" name="bassball">
+						<label for="bassball">야구</label>
+						<input type="checkbox" id="dd" name="dd">
+						<label for="dd">족구</label>
+						<input type="checkbox" id="ee" name="ee">
+						<label for="ee">수영</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						이미지
+					</td>
+					<td>
+						<input type="file" value="이미지">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="submit" value="확인">
+						<input type="button" value="취소">
+						<input type="reset" value="초기화">
+					</td>
+				</tr>
+
+			</table>
+		</fieldset>
+	</form>
+
+
+</body>
+</html>

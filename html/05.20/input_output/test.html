@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend><h1>가입신청서</h1></legend>
+			※필수항목
+			<table border="1" width="100%">
+				<colgroup>
+					<col width="100">
+					<col />
+				</colgroup>
+				<tbody>
+					<tr>
+						<td>
+							<label for="userid">아이디</label>
+						</td>
+						<td>
+							<input type="text" id="userid">
+							<input type="button" value="중복확인">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="userpw">비밀번호</label>
+						</td>
+						<td>
+							<input type="password" id="userpw">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="userpw2">비밀번호확인</label>
+						</td>
+						<td>
+							<input type="password" id="userpw2">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="usersex">성별</label>
+						</td>
+						<td>
+							<input type="radio" name="s" id="m" value=남자><label for="m">남자</label>
+							<input type="radio" name="s" id="w" value=여자><label for="w">여자</label>
+							<input type="radio" name="s" id="d" value=중성><label for="d">중성</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="fishing">취미</label>
+						</td>
+						<td>
+							<input type="checkbox" id=soccer value=축구><label for="soccer">축구</label>
+							<input type="checkbox" id=baseball value=야구><label for="baseball">야구</label>
+							<input type="checkbox" id=bascatball value=농구><label for="bascatball">농구</label>
+							<input type="checkbox" id=dd value=족구><label for="dd">족구</label>
+							<input type="checkbox" id=ww value=배구><label for="ww">배구</label>
+							<input type="checkbox" id=vv value=살축><label for="vv">살축</label>
+							<input type="checkbox" id=qq value=권투><label for="qq">권투</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<lable for="img">이미지</lable>
+						</td>
+						<td>
+							<input type="file">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+						<input type="submit" value="확인">
+						<input type="button" value="취소">
+						<input type="reset" value="reset">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</fieldset>
+	</form>
+
+
+</body>
+</html>

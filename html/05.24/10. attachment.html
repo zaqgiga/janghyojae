@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		html,body { height:100%; }
+		/*html,body의 높이를 100%로 잡아주는이유는 div의 컨텐츠사이즈가 100%로 잡혀있어서*/
+		body { margin:0; }
+		/*body의 마진을 주는 이유는 기본마진이 잡혀있어서 없애기위해서*/
+		div { border:1px red solid; height:100%;
+			background-position:center;
+			/*bg에 이미지를 센터로 맞춘다*/
+			background-size:cover;
+			/*auto : 원래 이미지가 그대로 사용되기 때문에 박스값을 줘도 사진 원본크기로 나옴
+			200px : 값을 하나만 주면 주어진값은 가로값으로 인식, 세로는 auto로 잡힘
+			400px 300px : 가로, 세로값이 다 주어져서 주어진대로 나옴
+			60% auot : 정해진 박스크기에 따라 가로가 60%로 고정 높이는 auto로 나옴
+			contaion - 이미지비율은 유지함, 가로세로중 작은값으로 배경에 맞춤
+			cover - 이미지비율 유지함, 가로세로중 큰값을 배경이미지에 맞춤
+			100% - 이미지의 가로세로 비율을 박스에 따라 100%로 맞춤*/
+			background-attachment: fixed;
+			}
+
+	 .user_1 {background-image:url('../images/user1.jpg')}
+	 .user_2 {background-image:url('../images/user2.jpg');
+	 	background-local; height:100px;}
+	 .user_3 {background-image:url('../images/user3.jpg')}
+	</style>
+</head>
+<body>
+	<div class="user_1"></div>
+	<div class="user_2"></div>
+	<div class="user_3"></div>
+</body>
+</html>

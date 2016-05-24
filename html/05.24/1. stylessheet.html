@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>stylesheet</title>
+	<link rel="stylesheet" href="2. css.css">
+	<style>
+
+		span{border:1px blue solid;}
+		.box{border:1px red solid; width:100px; height:100px;}
+		/*div의 class=box라고 이름을 주고 .box로 원하는것만 속성을 줄수있음*/
+		.wow{border:1px blue solid; width:100px; height:100px;}
+		/*div의 class=wow라고 이름을 주고 .box로 원하는것만 속성을 줄수있음*/
+		/*중가로{}를 사용할때는 border:1px처럼 =이 아니라 :를 사용해야함*/
+		p{border:1px red solid}
+		
+	</style>
+</head>
+	<h1>스타일시트</h1>
+<body>
+	<p style="border:1px red solid; background-color:blue">inline</p>
+	<p>hello world</p>
+	<p class="wow">hello world</p>
+	<p>hello world</p>
+	<p>hello world</p>
+
+
+
+	<!-- inline 방식의 스타일링, 직접적으로 효과를 주는것 -->
+	<div style="border:1px red solid; width:100px; height:100px;"></div> <br>
+
+	<div style="border:1px red solid;">block스타일 태그</div> <br>
+
+	<span>span</span>
+
+	<div class="box">span</div> <br>
+	<div class="wow">span</div> <br>
+	<div class="box">tex</div> <br>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

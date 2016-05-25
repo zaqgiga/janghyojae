@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>overflow</title>
+	<style>
+		.box{border:1px green solid;
+			width:400px;
+			height:200px;
+			overflow:hidden;
+		}
+		.box img{width:100%;
+
+		}
+		.visible{border:1px red solid;}
+		.visible ul{margin:0; padding:0;}
+		.visible li{border:1px red solid;}
+		.visible li.first{width:300px; height:300px; float:left;}
+		.visible li.first img{width:100%}
+		.visible li.first+li{margin-top:40px}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<img src="../images/img1.jpg" alt="">
+		<!-- overfloww 종류 : hidden, visible -->
+			<!-- overflow란? :  -->
+		<!-- hidden : "주어진 영역을 넘어가면 영역 넘어간 이후로는 이미지,텍스트 안보임" -->
+		<!-- visible : "주어진 영역을 넘어가도 다 보임"
+					   "주어진 영역 밖으로 컨텐츠를 보여줄때 사용"-->
+
+
+
+	</div>
+	<div class="visible">
+		<ur>
+			<li class="first"><img src="../images/img1.jpg" alt="">
+			이건 와플인가요?
+			</li>
+			<li>이건 와플인가요?</li>
+			<li>이건 와플인가요?</li>
+			<li>이건 와플인가요?</li>
+		</ur>
+
+
+	</div>
+</body>
+</html>

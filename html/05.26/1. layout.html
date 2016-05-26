@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>layout</title>
+		<style>
+			*{margin:0px; padding:0px;}
+			div{text-align:center;}
+			.layout{
+				outline:1px red solid;
+				width:900px;height:540px;
+				margin:20px auto;
+			}
+			.up{
+				outline: 1px red solid;
+				padding:20px 0 33px;
+				border-bottom: 2px black solid;
+				height:56px;
+				margin:0 30px 15px ;
+			}
+			.h_left{
+				outline: 1px black solid;
+				float:left;
+			}
+			.h_right{
+				outline: 1px red dashed;
+				float:right;
+			}
+			.h_contents{
+				outline: 1px green solid;
+				width:330px;
+				height:26px;
+				text-align:left;
+				clear:left;
+			}
+			.down{
+				outline:1px green solid;
+				margin:0px 30px;
+				height:385px;
+			}
+			.bigleft{
+				outline:1px black solid;
+				width:503px;
+				height:100%;
+				float:left;
+			}
+			.bigright{
+				outline: 1px black dashed;
+				width:auto;
+				height:100%;
+				margin-left:513px;
+			}
+			.lc{
+				outline: 1px red solid;
+				width:auto;
+				height:125px;
+				margin-bottom:12px;
+			}
+			.sl1{
+				outline:1px red solid;
+				width:140px;
+				height:100%;
+				float:left;
+			}
+			.sl2{
+				outline:1px red solid;
+				width:140px;
+				height:100%;
+				float:left;
+			}
+			.sl3{
+				outline:1px red solid;
+				width:140px;
+				height:100%;
+				float:left;
+			}
+			.sll1{
+				outline:1px black solid;
+				width:auto;
+				height:100%;
+				margin-left:150px;
+			}
+			.sll2{
+				outline:1px black solid;
+				width:auto; height:100%;
+				margin-left:150px;
+			}
+			.sll3{
+				outline:1px black solid;
+				width:auto; height:100%;
+				margin-left:150px;
+			}
+            .lc2{
+            	outline: 1px blue solid;
+				width:auto;
+				height:115px;
+				margin-bottom:12px;
+			}
+			.lc3{
+				outline:1px red dashed;
+				height:110px;
+			}
+			.r1{
+				outline: 1px green solid;
+				width:auto;
+				height:180px;
+				margin-bottom:12px;
+			}
+			.sr1{
+				outline: 1px red dashed;
+				width:159px;
+				height:180px;
+				float:left;
+			}
+			.sr2{
+				outline: 1px red dashed;
+				width:159px;
+				height:180px;
+				float:right;
+			}
+			.r2{
+				outline: 1px red dashed;
+				width:auto;
+				height:153px;
+				margin-bottom:12px;
+			}
+			.r3{
+				outline: 1px blue dashed;
+				width:auto;
+				height:28px;
+			}
+			.sr1_image{
+				outline:1px black solid;
+				width:auto;
+				height:145px;
+				margin-bottom:10px;
+			}
+			.sr1_text{
+				outline:1px red solid;
+				height:25px;
+			}
+			.sr2_image{
+				outline:1px black solid;
+				width:auto;
+				height:145px;
+				margin-bottom:10px;
+			}
+			.sr2_text{
+				outline:1px red solid;
+				height:25px;
+			}
+
+		</style>
+</head>
+<body>
+		<div class="layout">
+
+			<div class="up">
+				<div class="h_left">
+					<img src="http://static.naver.net/newsstand/up/2013/0813/nsd113559563.gif" alt="로고, 파란색, 아이뉴스24">
+				</div>
+				<div class="h_right">
+					<img src="http://adcreative.naver.com/ad3/1004/1004874/468_60_11446516899395.jpg" alt="해피빈 여러분의 댓글에 특급칭찬을 드립니다.
+					엄지손가락 번쩍!">
+				</div>
+
+				<div class="h_contents">
+					<input type="button" value="구독하기">
+					<input type="button" value="이용자한마디">
+					<input type="button" value="소셜">
+					<span>2016-05-26</span>
+				</div>
+			</div>
+			<div class="down">
+
+				<div class="bigleft">
+					<div class="lc">
+						<div class="sl1">sl1</div>
+						<div class="sll1">sll1</div>
+
+					</div>
+					<div class="lc2">
+
+						<div class="sl2">sl2</div>
+						<div class="sll2">sll2</div>
+					</div>
+					<div class="lc3">
+						<div class="sl3">sl3</div>
+						<div class="sll3">sll3</div>
+					</div>
+				</div>
+
+				<div class="bigright">
+					<div class="r1">
+						<div class="sr1">
+							<div class="sr1_image">img.1</div>
+							<div class="sr1_text">text</div>
+						</div>
+						<div class="sr2">
+							<div class="sr2_image">tmg.2</div>
+							<div class="sr2_text">text</div>
+						</div>
+					</div>
+					<div class="r2">r2</div>
+					<div class="r3">r3</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+
+
+</body>
+</html>

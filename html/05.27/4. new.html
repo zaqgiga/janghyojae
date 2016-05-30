@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+		<style>
+		.a{border:1px red dashed; width:200px;}
+		.b{border:1px blue solid; width:100px;}
+		.a{margin:100px;}
+		.a::before{display:block; content:""; width:100px; height:100px; border:1px green solid; transition:2s;}
+		.a::after{display:block; content:""; width:100px; height:100px; border:1px green solid; transition:3s}
+		.a:hover::before{margin-top:20px; transform:rotateX(180deg); margin-left:100px;}
+		.a:hover::after{margin-top:20px;transform:rotateY(-180deg); margin-right:100px;}
+		.b{margin:100px;}
+		.b::before{display:block; content:""; width:100px; height:100px; border:1px black solid; transition:2s;}
+		.b::after{display:block; content:""; width:100px; height:100px; border:1px black solid; transition:3s}
+		.b:hover::before{margin-top:20px; transform:rotateX(180deg); margin-left:100px;}
+		.b:hover::after{margin-top:20px;transform:rotateY(-180deg); margin-right:100px;}
+		</style>
+</head>
+<body>
+	<div class="a"></div>
+	<div class="b"></div>
+
+</body>
+</html>

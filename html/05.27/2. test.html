@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>title</title>
+	<style>
+	*{padding: 0; margin: 0; list-style: none;}
+	.menu{
+		border: 1px red solid;
+		width:200px;
+	}
+	.menu>ul{
+		margin:20px;
+	}
+	.menu ul ul{
+		border:5px blue dashed; text-indent:20px; display:none;
+	}
+	.menu>ul>li>a:hover+ul{display:block;}
+	a:link{color:black;}
+	</style>
+
+</head>
+<body>
+	<div class="menu">
+		<!-- table>(colgroup)>col*4+(thead>tr>th*4)+(tbody>tr*5>td*4)+(tfoot>tr*3>td*3)
+		div.wrap>(div.header>ul>li*4>a{text})+div.contet>div.*2>div.*3 -->
+
+
+			<div class="menu">
+			<ul>
+				<li>
+					<a href="">text</a>
+					<ul>
+						<li><a href="#">text</a></li>
+						<li><a href="">text</a></li>
+						<li><a href="">text</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="">text</a>
+					<ul>
+						<li><a href="">text</a></li>
+						<li><a href="">text</a></li>
+						<li><a href="">text</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="">text</a>
+					<ul>
+						<li><a href="">text</a></li>
+						<li><a href="">text</a></li>
+						<li><a href="">text</a></li>
+					</ul>
+				</li>
+			</ul>
+			</div>
+
+
+
+	</div>
+
+
+</body>
+</html>

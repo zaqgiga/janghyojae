@@ -1,143 +1,99 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>lay_out2</title>
+        <style>
+            *{
+            margin:0px; padding:0px;}
+            .back{
+                outline: 1px red solid;
+                width:900px;
+                height:540px;
+                margin: 20px auto 0;
+            }
+            .back .top{
+                padding:20px 0 33px;
+                border-bottom: 2px black solid;
+                height: 54px;
+                margin:0 30px 15px;
 
-    <style type="text/css">
-        *{
-            margin:0;
-            padding: 0;}
+            }
+            .back .contents{
+                outline:1px red solid;
+                width:auto;
+                height:385px;
+                margin:0 30px;
 
+            }
+            .back .contents .left{
+                outline: 1px black dashed;
+                width:503px;
+                height:100%;
+                float:left;
+            }
+            .back .contents .left .left_top{
+                outline: 1px black solid;
+                width:auto;
+                height:122px;
+                margin-bottom:10px;
+            }
+            .back .contents .left .left_middle{
+                outline: 1px red solid;
+                width:auto;
+                height: 122px;
+                margin-bottom:10px;
+            }
+            .back .contents .left .left_bottom{
+                outline: 1px black solid;
+                width:auto;
+                height: 121px
+            }
 
-
-        .wrapper{
-            width: 900px;
-            height: 540px;
-            outline: 1px #F00 solid;
-            margin:20px auto 0;
-        }
-        .header{
-            padding:20px 0 33px;
-            border-bottom: 2px #000 solid;
-            height: 54px;
-            margin:0 30px 15px;
-        }
-        /*----------------------------------------------------------*/
-        .h_left{
-            outline: 1px black solid;
-            float:left;
-        }
-        .h_right{
-            outline: 1px red dashed;
-            float:right;
-        }
-        .h_contents{
-            outline: 1px green solid;
-            width:350px;
-            height:30px;
-            clear:left;
-        }
-        .content {
-            outline: 1px #F00 solid;
-            height:385px;
-        }
-        .content .lc{
-            outline:1px #F00 solid;
-            width:503px;
-            height:100%;
-            float:left;
-        }
-        ul, ol{list-style:none;}
-
-        .content .lc .top_article{
-            outline: 1px #F00 solid;
-            height:110px;
-            margin-bottom:10px;
-        }
-        .content .lc .bottom_article{
-            height:220px;
-            outline: 1px #F00 solid;
-        }
-        /*----------------------------------------------------------*/
-        .content .rc{
-            outline:1px #F00 solid;
-            margin-left:513px;
-            height:100%;
-        }
-        .rc_top{
-            height: 188px;
-            outline: 1px #F00 solid;
-        }
-		.rc_bottom{
-			outline: 1px red solid;
-			height: 100px;
-        }
-		.rc_promotion{
-			outline:1px black dashed;
-			height: 40px;
-		}
-        .firstli img{
-            outline: 1px black solid;
-
-            float:left;
-        }
+            .back .contents .right{
+                outline: 1px green solid;
+                width:auto;
+                height:100%;
+                margin-left:513px;
+            }
+            .back .contents .right .right_top{
+                outline: 1px black solid;
+                width:auto;
+                height:200px;
+                margin-bottom:10px;
+            }
+            .back .contents .right .right_bottom{
+                outline: 1px red dashed;
+                width:auto;
+                height:175px;
+            }
 
 
+        }
+        </style>
 
 
-
-
-    </style>
 </head>
 <body>
+    <div class="back">
+        <div class="top"></div>
+        <div class="contents">
+            <div class="left">
+                <div class="left_top"></div>
+                <div class="left_middle"></div>
+                <div class="left_bottom"></div>
 
-    <div class="wrapper">
-        <div class="header">
-            <div class="h_left">
-                <img src="http://static.naver.net/newsstand/up/2013/0813/nsd114420405.gif" alt="">
             </div>
-            <div class="h_right">
-                <img src="http://adcreative.naver.com/ad3/1004/1004874/468_60_11446516899395.jpg" alt="">
-            </div>
-
-            <div class="h_contents">
-
-                <input type="button" value="구독하기">
-                <input type="button" value="이용자한마디">
-                <input type="button" value="소셜">
-                <span>2016-05-26</span>
-        </div>
-        <div class="content">
-            <div class="lc">
-                <div class="top_article">
-                    <ul>
-                        <li class="firstli">
-                            <img src="http://static.naver.net/newsstand/2016/0526/inews/150458/001.jpg" alt="아저씨">
-                            <strong>삼성 "퀀텀닷, 차세대 TV 화질 역사쓸 것"</strong>
-                            <span>장혁 삼성전자 종합기술원 부사장 '국제 퀀텀닷 컨퍼런스' 기조연설 나서</span>
-                        </li>
-                        <li><a href="#">김현석 삼성전자 "퀀텀닷 TV, OLED 앞선다"</a></li>
-                        <li><a href="#">삼성전자, 멕시코서 '퀀텀닷 기술 세미나'..</a></li>
-                    </ul>
-
-
-
+            <div class="right">
+                <div class="right_top"></div>
+                <div class="right_bottom">
                 </div>
-                <div class="bottom_article">bottom_article</div>
 
-
-            </div>
-            <div class="rc">
-
-                <div class="rc_top">rc_top</div>
-                <div class="rc_bottom">rc_bottom</div>
-                <div class="rc_promotion">rc_promotion</div>
             </div>
         </div>
+
+
     </div>
-
-
 
 </body>
 </html>

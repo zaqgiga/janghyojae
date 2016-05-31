@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>포지션2</title>
+		<style>
+		 	.box{
+		 		font-size:2em;
+		 		width:200px;
+				height:200px;
+				border:1px black solid;
+		 	}
+			.box1{
+				background-color: red;
+				position:relative;
+				left:50px;
+				top:100px;
+				z-index:1;
+			}
+			.box2{
+				background-color: yellow;
+				position:relative;
+				left:50px;
+				top:50px;
+				z-index:2;
+			}
+			.box3{
+				background-color: blue;
+				position:relative;
+				left:50px;
+				bottom:50px;
+				z-index:3;
+			}
+		</style>
+</head>
+<body>
+	<!-- z-index란?
+	포토샵의 레이어를 최상으로 올려주는것과 같은 역할을 함 -->
+	<div class="box1 box">1</div>
+	<div class="box2 box">2</div>
+	<div class="box3 box">3</div>
+
+
+
+</body>
+</html>

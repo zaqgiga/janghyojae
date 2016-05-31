@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>포지션 앱솔루트</title>
+		<style>
+		*{margin:0; padding:0;}
+			.box{
+				position:absolute;
+				-webkit-background-size: cover;
+				background-size: cover;
+				background-position:center;
+			}
+			.box1{
+				background-image: url(../images/img_1.jpg);
+				top:0;
+				left:0;
+				right:50%;
+				bottom:50%;
+			}
+			.box2{
+				background-image: url(../images/img2.png);
+				top:0;
+				left:50%;
+				right:0;
+				bottom:50%;
+			}
+			.box3{
+				background-image: url(../images/img3.jpg);
+				top:50%;
+				left:0;
+				right:50%;
+				bottom:0;
+			}
+			.box4{
+				background-image: url(../images/img1.jpg);
+				top:50%;
+				left:50%;
+				right:0;
+				bottom:0;
+			}
+		</style>
+</head>
+<body>
+	<div class="box1 box"></div>
+	<div class="box2 box"></div>
+	<div class="box3 box"></div>
+	<div class="box4 box"></div>
+</body>
+</html>

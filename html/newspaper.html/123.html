@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>05.30 신문접기</title>
+           <style type="text/css">
+               *{margin:0; padding:0;}
+               ul{list-style:none;}
+               body{
+                   background-image: url(http://static.naver.net/newsstand/img/20121231/bg_bd.png);
+               }
+               .wrapper{
+                   padding:0 16px;
+                   background-image: url(http://static.naver.net/newsstand/img/20121231/bg_panel.png);
+                   outline:1px #000 solid; width:900px; height:540px;
+                   margin:100px auto 0;
+               }
+               .wrapper .header{
+                   border-bottom:3px #000 solid; height:55px;
+                   margin:0 30px 20px; padding:20px 0 33px;
+               }
+               .wrapper>.header div:first-child{
+                   outline:1px #F00 solid; width:260px; height:55px;
+                   float:left; margin-bottom:5px;
+               }
+               .wrapper>.header div.h_left + div{
+                   outline:1px #F00 solid; width:468px; height:60px;
+                   float:right;
+               }
+               .wrapper>.header div.h_left + div + div{
+                   outline:1px #F00 solid; width:270px; height:25px;
+                   clear:left;
+               }
+
+
+
+               .wrapper .contents{
+                   outline:1px #000 solid; height:380px;
+                   margin:0 30px;
+               }
+               .contents .cl{
+                   outline:1px #F00 solid; width:606px; height:100%;
+                   float:left;
+               }
+               .cl>.cl_left{
+                   outline:1px #00F solid; width:360px; height:240px;
+                   float:left; margin-right:4px;
+               }
+               .cl>.cl_right{
+                   outline:1px #00F solid; width:242px; height:240px;
+                   float:left; margin-bottom:10px;
+               }
+               .cl>.cl_right> ul li{
+                   outline:1px #0FF solid; width:117px; height:114px;
+                   float:left;
+               }
+               .cl>.cl_right>ul li:first-child{
+                   margin-right:7px;
+               }
+               .cl>.cl_right>ul li:first-child+li{
+                   margin-bottom:12px;
+               }
+               .cl>.cl_right>ul li:first-child+li+li{
+                   margin-right:7px;
+               }
+               [class*="box"]{
+                   outline:1px #F0F solid; height:80px;
+                   display:block;
+               }
+               [class*="box"]>img{
+                   width:100%; height:auto;
+               }
+               [class*="text"]{
+                   outline:1px #F0F solid; height:31px;
+                   display:block;
+               }
+
+               .cl>.cl_bottom{
+                   border-top:1px #000 solid; height:114px;
+                   clear:left; padding:10px 0 5px;
+               }
+               .cl .cl_bottom ul li{
+                  outline:1px #F00 solid; width:117px; height:114px;
+                  float:left; margin-left:5px;
+               }
+               .cl>.cl_bottom>ul li:first-child{
+                   margin:0;
+               }
+
+
+
+               .contents .cr{
+                   outline:1px #F00 solid; width:224px; height:100%;
+                   margin-left:616px;
+               }
+               .cr>.cr_top{
+                   outline:1px #00F solid; width:224px; height:205px;
+               }
+               [class="text_a"]{
+                   outline:1px #00F solid; height:15px;
+                   margin-top:3px;
+                   list-style-position: inside;
+                   font-size:12px;
+               }
+               [class$="_strong"]{
+                   width:219px; height:19px;
+                   padding:5px 0 2px 5px;
+                   background-color:#666;
+               }
+               .cr>.cr_center{
+                   outline:1px #00F solid; width:224px; height:62px;
+                   margin-top:4px;
+               }
+               .cr_center>ul>.crcs>strong{
+                   outline:1px #0FF solid; height:16px;
+                   display:block; margin-top:4px;
+               }
+               .cr_center>ul>.crcs>span{
+                   outline:1px #0FF solid; height:16px;
+                   display:block;
+               }
+               .cr>.cr_bottom{
+                   outline:1px #00F solid; width:224px; height:105px;
+                   margin-top:4px;
+               }
+               .cr_bottom>.crbs>img{
+                   outline:1px #0FF solid; width:46px; height:66px;
+                   float:left;
+               }
+               .cr_bottom>.crbs>strong{
+                   outline:1px #0FF solid; height:30px;
+               }
+           </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <div class="h_left">h_left</div>
+                <div class="h_right">h_right</div>
+                <div class="h_contents">h-contents</div>
+            </div>
+            <div class="contents">
+                <div class="cl">
+                    <div class="cl_left">cl_left</div>
+                    <div class="cl_right">
+                        <ul>
+                            <li >
+                                <a href="">
+                                    <span class="clr_1_box_a">
+                                        <img src="" alt="" />
+                                    </span>
+                                    <span class="clr_1_text_a">
+                                        clr_1_text
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class=clr_2_box_a>
+                                        <img src="" alt="" />
+                                    </span>
+                                    <span class="clr_2_text_a">
+                                        clr_2_text
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="clr_3_box_a">
+                                        <img src="" alt="" />
+                                    </span>
+                                    <span class="clr_3_text_a">
+                                        clr_3_text
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="clr_4_box_a">
+                                        <img src="" alt="" />
+                                    </span>
+                                    <span class="clr_4_text_a">
+                                        clr_4_text
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="cl_bottom">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span class="clb_1_box_b">
+                                        <img src="" alt="" />
+                                    </span>
+                                    <span class="clb_1_text_b">
+                                        clb_1_text
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="clb_2_box_b">
+                                        <img src="" alt="" />
+                                    </span>
+                                    <span class="clb_2_text_b">
+                                        clb_2_text
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="clb_3_box_b">
+                                        <img src="" alt="" />
+                                    </span>
+                                    <span class="clb_3_text_b">
+                                        clb_3_text
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="clb_4_box_b">
+                                        <img src="" alt="" />
+                                    </span>
+                                    <span class="clb_4_text_b">
+                                        clb_4_text
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="clb_5_box_b">
+                                        <img src="" alt="" />
+                                    </span>
+                                    <span class="clb_5_text_b">
+                                        clb_5_text
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cr">
+                    <div class="cr_top">
+                        <ol>
+                            <div class="1_strong">
+                                <strong>[뉴스클립]</strong>
+                            </div>
+                            <li class="text_a">text_a</li>
+                            <li class="text_a">text_a</li>
+                            <li class="text_a">text_a</li>
+                            <li class="text_a">text_a</li>
+                            <li class="text_a">text_a</li>
+                            <li class="text_a">text_a</li>
+                            <li class="text_a">text_a</li>
+                            <li class="text_a">text_a</li>
+                            <li class="text_a">text_a</li>
+                            <li class="text_a">text_a</li>
+                        </ol>
+                    </div>
+                    <div class="cr_center">
+                        <ul>
+                            <div class="2_strong">
+                                <strong>[오늘의 이슈]</strong>
+                            </div>
+                           <li class="crcs">
+                               <strong></strong>
+							   <span></span>
+                           </li>
+                        </ul>
+                    </div>
+                    <div class="cr_bottom">
+                        <ul>
+                            <div class="3_strong">
+                                <strong>[오늘의 서평]</strong>
+                            </div>
+                            <li class="crbs">
+                                <img src="" alt="" />
+                                <strong></strong>
+                                <span></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

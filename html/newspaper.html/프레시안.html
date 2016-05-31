@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>프레시안</title>
+		<style>
+			*{
+				margin:0;
+				padding:0;
+			}
+			body{background-image: url(http://static.naver.net/newsstand/img/20121231/bg_bd.png);}
+			.back{
+				background-image: url(http://static.naver.net/newsstand/img/20121231/bg_panel.png);
+				outline:1px red solid;
+				width:900px;
+				height:540px;
+				margin:20px auto 0;
+				padding:0 16px;
+			}
+			.back .top{
+				border-bottom:2px black solid;
+				width:840px;
+				height:111px;
+				margin:0 auto;
+			}
+			.h_left{
+				outline: 0px black solid;
+				width:260px;
+				height:55px;
+				float:left;
+				margin-top:20px;
+			}
+			.h_right{
+				outline: 0px red dashed;
+				width:468px;
+				height:60px;
+				float:right;
+				margin-top:30px;
+			}
+			.h_contents{
+				outline: 0px green solid;
+				width:350px;
+				height:30px;
+				clear:left;
+			}
+			.back .content{
+				outline:1px red solid;
+				width:840px;
+				height:380px;
+				margin: 20px auto 0;
+			}
+			.content .left{
+				outline:1px red solid;
+				width:606px;
+				height:380px;
+				float:left;
+			}
+			.content .left .left_top{
+				outline:1px red solid;
+				width:606px;
+				height:240px;
+			}
+			.content .left .left_top .box1{
+				outline:1px red solid;
+				width:360px;
+				height:240px;
+				float:left;
+			}
+			.left_box2{
+				outline:1px red solid;
+				width:117px;
+				height:80px;
+			}
+			.content .left .left_top .box2{
+				outline:1px red solid;
+				width:117px;
+				height:110px;
+				float:right;
+				margin-bottom:15px;
+			}
+			.left_box3{
+				outline:1px red solid;
+				width:117px;
+				height:80px;
+			}
+			.content .left .left_top .box3{
+				outline:1px red solid;
+				width:117px;
+				height:110px;
+				clear:right;
+				float:right;
+			}
+			.left_box4{
+				outline:1px red solid;
+				width:117px;
+				height:80px;
+			}
+			.content .left .left_top .box4{
+				outline:1px red solid;
+				outline:1px red solid;
+				width:117px;
+				height:110px;
+				margin-left:367px;
+				margin-bottom:15px;
+			}
+			.left_box5{
+				outline:1px red solid;
+				width:117px;
+				height:80px;
+			}
+			.content .left .left_top .box5{
+				outline:1px red solid;
+				width:117px;
+				height:110px;
+				margin-left:367px;
+			}
+
+			.content .left .left_bottom{
+				outline:1px red solid;
+				width:auto;
+				height:125px;
+				margin-top:15px;
+			}
+			.box_bottom1{
+				outline:1px red solid;
+				width:117px;
+				height:125px;
+				float:left;
+			}
+			.box_img1{
+				outline:1px red solid;
+				width:117px;
+				height:80px;
+			}
+			.box_bottom2{
+				outline:1px red solid;
+				width:117px;
+				height:125px;
+				float:left;
+				margin-left:5px;
+			}
+			.box_img2{
+				outline:1px red solid;
+				width:117px;
+				height:80px;
+			}
+			.box_bottom3{
+				outline:1px red solid;
+				width:117px;
+				height:125px;
+				float:left;
+				margin-left:5px;
+			}
+			.box_img3{
+				outline:1px red solid;
+				width:117px;
+				height:80px;
+			}
+			.box_bottom4{
+				outline:1px red solid;
+				width:117px;
+				height:125px;
+				float:left;
+				margin-left:5px;
+			}
+			.box_img4{
+				outline:1px red solid;
+				width:117px;
+				height:80px;
+			}
+			.box_bottom5{
+				outline:1px red solid;
+				width:117px;
+				height:125px;
+				float:right;
+			}
+			.box_img5{
+				outline:1px red solid;
+				width:117px;
+				height:80px;
+			}
+			.content .right{
+				outline:1px red solid;
+				width:220px;
+				height:383mpx;
+				margin-left:620px;
+			}
+			.right_top{
+				outline:1px blue solid;
+				width:220px;
+				height:215px;
+			}
+			.right_middle{
+				outline:1px red solid;
+				width:220px;
+				height:65px;
+			}
+
+			.right_bottom{
+				outline:1px black solid;
+				width:220px;
+				height:103px;
+			}
+			.rt1{
+				outline:1px red solid;
+				width:220px;
+				height:25px;
+				margin-bottom:8px;
+			}
+			.rt2{
+				outline:1px red solid;
+				width:220px;
+				height:178px;
+				margin-bottom:5px;
+			}
+			.rrt1{
+				outline:1px red solid;
+				width:220px;
+				height:25px;
+				margin-bottom:6px;
+			}
+			.rrt2{
+				outline:1px red solid;
+				width:220px;
+				height:28px;
+				margin-bottom:6px;
+			}
+			.rrbc1{
+				outline:1px red solid;
+				width:220px;
+				height:25px;
+				margin-bottom:5px;
+			}
+			.rrbc2{
+				outline:1px red solid;
+				width:220px;
+				height:66px;
+				margin-bottom:7px;
+
+			}
+			.rrbc_left{
+				outline:1px red solid;
+				width:46px;
+				height:66px;
+				float:left;
+			}
+			.rrbc_right{
+				outline:1px red solid;
+				width:174px;
+				height:66px;
+				margin-left:46px;
+			}
+			.li{
+				outline:1px blue solid;
+				width:220px;
+				height:15px;
+				margin-top:3px;
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</style>
+</head>
+<body>
+
+	<div class="back">
+		<div class="top">
+			<div class="h_left"><img src="http://static.naver.net/newsstand/up/2016/0325/nsd185740259.png" alt=""></div>
+			<div class="h_right"><img src="http://adcreative.naver.com/ad3/1004/1004874/468_60_11446516899395.jpg" alt=""></div>
+			<div class="h_contents">
+				<input type="buttom" value="구독하기" size="6px">
+				<input type="buttom" value="이용자 한마디" size="8px">
+
+
+			</div>
+		</div>
+		<div class="content">
+			<div class="left">
+				<div class="left_top">
+					<div class="left_top_left">
+						<div class="box1">
+							<img src="http://static.naver.net/newsstand/2016/0530/pressian/122005/001.jpg" alt="d" width="360px" height="240px">
+						</div>
+						<div class="box2" style="font-size:12px" >
+							<div class="left_box2"><img src="http://static.naver.net/newsstand/2016/0530/pressian/122005/003.jpg" alt="d" width="117px" height="80px"></div>
+						<span>박근혜가 꽂힌 '코리에이드'정체는?</span>
+						</div>
+						<div class="box3" style="font-size:12px">
+							<div class="left_box3"><img src="http://static.naver.net/newsstand/2016/0530/pressian/122005/005.jpg" alt="d" width="117px" height="80px"></div>
+						<span>청년, '사적인'죽음을 택하다</span>
+						</div>
+						<div class="box4" style="font-size:12px">
+							<div class="left_box4"><img src="http://static.naver.net/newsstand/2016/0530/pressian/122005/002.jpg" alt="d" width="117px" height="80px"></div>
+						<span>왜 LG는 홍만표를 사외이사로 임명했을까?</span>
+						</div>
+						<div class="box5" style="font-size:12px">
+							<div class="left_box5"><img src="http://static.naver.net/newsstand/2016/0530/pressian/122005/004.jpg" alt="d" width="117px" height="80px"></div>
+						<span>'동성애 지지'반기문, 대선 후보 될 수 있다.</span>
+						</div>
+
+					</div>
+					<div class="left_top_right">
+						<div class="ltrt"></div>
+						<div class="ltrb"></div>
+					</div>
+				</div>
+				<div class="left_bottom">
+					<div class="box_bottom1" style="font-size:11px">
+						<div class="div box_img1"><img src="http://static.naver.net/newsstand/2016/0530/pressian/122005/006.jpg" alt=""></div>
+						옥시와 합의를 권한 판사는 누구인가?
+					</div>
+					<div class="box_bottom2" style="font-size:11px">
+						<div class="div box_img2"><img src="http://static.naver.net/newsstand/2016/0530/pressian/122005/007.jpg" alt=""></div>
+						박근혜 가정교사 "구조조정,책임은 오직 대
+					</div>
+					<div class="box_bottom3" style="font-size:11px">
+						<div class="div box_img3"><img src="http://static.naver.net/newsstand/2016/0530/pressian/122005/008.jpg" alt=""></div>
+						"북한과 협력 중단"발표에 우간다 정부 혼선
+					</div>
+					<div class="box_bottom4" style="font-size:11px">
+						<div class="div box_img4"><img src="http://static.naver.net/newsstand/2016/0530/pressian/122005/009.jpg" alt=""></div>
+						'지하철 사망 사고'19세 직원 가방엔 컵라면
+					</div>
+					<div class="box_bottom5" style="font-size:11px">
+						<div class="div box_img5"><img src="http://static.naver.net/newsstand/2016/0530/pressian/122005/010.jpg" alt=""></div>
+						여동생을 미끼로 노벨상을 받아 볼까?
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<div class="right_top">
+					<div class="rt1"><img src="../images/head1.jpg" alt=""></div>
+					<div class="rt2">
+						<div class="li"></div>
+						<div class="li"></div>
+						<div class="li"></div>
+						<div class="li"></div>
+						<div class="li"></div>
+						<div class="li"></div>
+						<div class="li"></div>
+						<div class="li"></div>
+						<div class="li"></div>
+						<div class="li"></div>
+					</div>
+				</div>
+				<div class="right_middle">
+					<div class="rrt1"><img src="../images/head2.jpg" alt=""></div>
+					<div class="rrt2"></div>
+				</div>
+				<div class="right_bottom">
+					<div class="rbcl"></div>
+					<div class="rbc2">
+						<div class="rrbc1"><img src="../images/head3.jpg" alt=""></div>
+						<div class="rrbc2">
+							<div class="rrbc_left"><img src="http://static.naver.net/newsstand/2016/0530/pressian/154706/011.jpg" alt=""></div>
+							<div class="rrbc_right"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

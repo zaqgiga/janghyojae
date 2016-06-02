@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+		<style>
+			h1{ letter-spacing: -3px;}
+			p{ letter-spacing: 10px;}
+			/*letter-spacing은 글짜 하나당 자간의 넓이 조절*/
+			.wow{ word-spacing: 30px;}
+			/*word-spacing은 띄어쓰기 자간 넓이*/
+			h3{ width:140px; border:1px red solid;word-break: break-all;}
+			/*word-break: break-all 설정 기본 상태
+			pre태그를 쓸때 사용한다고 한다*/
+
+			h2{ width:140px; border:1px red solid;word-break: keep-all;}
+			/*word-break: keep-all을 사용하면 설정된 박스안에 텍스트가
+			단어별로 끊긴다.*/
+
+			.wow2{text-transform: capitalize;}
+			/*uppercase - 전부 대문자로 바뀜
+			lowercase - 전부 소문자로 바뀜
+			capitalize - 앞글자만 대문자로 바뀜
+			※단 영문에서만 사용*/
+
+			/*font: italic bold 12px/30px grorgia, serif;
+                   폰트 스타일, 굵기, 글씨사이즈, 라인헤이트, 폰트 페밀리*/
+
+
+
+		</style>
+</head>
+<body>
+	<h1>안녕하세요</h1>
+
+	<h2>안녕하세요 저는 장효재입니다. 제 나이는 28살이구요 사는곳은 인천입니다.</h2>
+
+	<h3>안녕하세요</h3>
+
+	<p>안녕하세요 반갑습니다.</p>
+
+	<span class="wow">또 오세요. 이 세끼야 반갑냐? 또 와라</span>
+
+	<pre>안녕하세요 저는 장효재입니다.
+		제 나이는 28살이구요 사는곳은 인천입니다.</pre>
+		<!-- pre태그는 엔터를 치면 그대로 인식한다.
+		문장을 그대로 복붙할때 사용할때 사용
+		그러나 box안에 가둬놔도 뚫고감
+		overflow 히든을 주면 텍스트가 내려가지않고 그냥 짤라버림 -->
+
+	<span class="wow2">we should respect old people.</span>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

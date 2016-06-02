@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>미디어오늘</title>
+		<style>
+			*{margin:0; padding:0;}
+			body{background-image:url(http://static.naver.net/newsstand/img/20121231/bg_bd.png);}
+			ul li{list-style: none;}
+			.html{outline:1px red solid; width:100%position:relative;}
+			.news{ background-image: url(http://static.naver.net/newsstand/img/20121231/bg_panel.png); outline:1px red solid; width:900px; height:540px; padding:0 16px; margin:170px auto 0; position:relative;}
+			.btn{cursor:help; border:0; background-color:transparent; text-indent:-9999px; background-image:url(../images/news.png);}
+			.btn2{cursor:help; border:0; background-color:transparent; text-indent:-99999px; background-image:url(../images/news2.png);}
+
+			.top{ background-image: url(http://static.naver.net/newsstand/img/20121231/bg_hd.png); width:100%; height:40px; position: fixed; top:0;}
+			.news_stand{outline:1px red solid; width:351px; height:30px; background-position: 0 -80px; position:absolute; left:15px; top:5px;}
+			.mynews1{outline:0px red solid; width:90px; height:30px; background-position: 0 -184px; position:absolute; left:870px; top:5px;}
+			.mynews2{outline:0px red solid; width:90px; height:30px; background-position: -88px -150px; position:absolute; left:955px; top:5px;}
+			.r_user{outline:0px red solid; width:45px; height:21px; background-position: -187px -174px; position:absolute; right:250px; top:10px;}
+			.r_menu{outline:0px red solid; width:17px; height:16px; background-position: -200px -120px; position:absolute; right:215px; top:12px;}
+			.return{outline:0px red solid; width:61px; height:13px; background-position: -253px -153px; position:absolute; right:145px; top:14px;}
+			.setup{outline:0px red solid; width:44px; height:15px; background-position: -332px -152px; position:absolute; right:90px; top:13px;}
+			.r_logo{outline:0px red solid; width:52px; height:10px; background-position: -541px -276px; position:absolute; right:25px; top:15px;}
+
+			.menu_1{outline:3px red solid; width:75px; height:13px; background-position: -178px -257px; position:absolute; right:900px; bottom:0px;}
+			.menu_2{outline:0px red solid; width:52px; height:10px; background-position: -541px -276px; position:absolute; right:25px; top:15px;}
+			.menu_3{outline:0px red solid; width:52px; height:10px; background-position: -541px -276px; position:absolute; right:25px; top:15px;}
+			.menu_4{outline:0px red solid; width:52px; height:10px; background-position: -541px -276px; position:absolute; right:25px; top:15px;}
+            .menu_5{outline:0px red solid; width:52px; height:10px; background-position: -541px -276px; position:absolute; right:25px; top:15px;}
+			.menu_6{outline:0px red solid; width:52px; height:10px; background-position: -541px -276px; position:absolute; right:25px; top:15px;}
+			.menu_7{outline:0px red solid; width:52px; height:10px; background-position: -541px -276px; position:absolute; right:25px; top:15px;}
+			.menu_8{outline:0px red solid; width:52px; height:10px; background-position: -541px -276px; position:absolute; right:25px; top:15px;}
+
+
+
+
+
+			.n_top{ outline:1px red solid; width:840px; height:110px; margin:0 auto;}
+			.logo{outline:1px red solid; width:260px; height:55px; float:left; margin-top:20px;}
+			.t_banner{outline:1px red solid; width:468px; height:60px; float:right; margin-top:30px;}
+			.userinput{outline:1px red solid; width:300px; height:25px; clear:left;}
+
+
+			.n_content{ outline:1px red solid; width:840px; height:380px; margin:20px auto; position:relative;}
+
+			.c_left{outline:1px red solid; width:575px; height:380px;}
+			.main{ outline:1px red solid; width:380px; height:380px;}
+			.sub1{outline:1px red solid;width:180px;height:180px; position:absolute; left:395px;top:0px;}
+			.sub2{outline:1px red solid;width:180px;height:180px;	position:absolute;left:395px;bottom:0px;}
+
+
+			.c_right{outline:1px red solid; width:250px; height:380px; position:absolute; right:0; top:0;}
+			.box{outline:1px red solid; width:120px; height:121px; font-size: 12px; overflow: hidden;}
+
+			.kind{ outline:1px red solid; width:100%; position:fixed; bottom:80px; }
+			.kind_box{outline:1px red solid; width:81px; height:73px; display:inline-block; margin:0 auto;}
+			.footer{background-image: url(http://static.naver.net/newsstand/img/20131014/bg_ft.png);height:80px; position:fixed; width:100%; bottom:0;}
+
+
+
+			.box {float:right; margin:0 3px 5px 2px; }
+		 	img{width:100%}
+			.footer>p {text-align:center;}
+		</style>
+
+
+</head>
+<body>
+	<div class="back">
+		<div class="btn menu_1"></div>
+		<div class="btn menu_2"></div>
+		<div class="btn menu_3"></div>
+		<div class="btn menu_4"></div>
+		<div class="btn menu_5"></div>
+		<div class="btn menu_6"></div>
+		<div class="btn menu_7"></div>
+		<div class="btn menu_8"></div>
+		<div class="top">
+			<div class="btn news_stand"></div>
+			<div class="btn mynews1"></div>
+			<div class="btn mynews2"></div>
+			<div class="btn r_user"></div>
+			<div class="btn2 r_menu"></div>
+			<div class="btn table"></div>
+			<div class="btn return"></div>
+			<div class="btn setup"></div>
+			<div class="btn r_logo"></div>
+
+		</div>
+		<div class="news">
+			<div class="n_top">
+				<div class="logo"><img src="http://static.naver.net/newsstand/up/2013/0813/nsd114522986.gif" alt=""></div>
+				<div class="t_banner"><img src="http://adcreative.naver.com/ad3/1004/1004874/468_60_01446516899395.jpg" alt=""></div>
+				<div class="userinput">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<div class="n_content">
+				<div class="c_left">
+					<ul>
+						<li class="main"><img src="http://static.naver.net/newsstand/2016/0602/mediatoday/142301/001.jpg" alt="#"></li>
+						<li class="sub1"><img src="http://static.naver.net/newsstand/2016/0602/mediatoday/142301/002.jpg" alt=""></li>
+						<li class="sub2"><img src="http://static.naver.net/newsstand/2016/0602/mediatoday/142301/003.jpg" alt=""></li>
+					</ul>
+				</div>
+				<div class="c_right">
+					<ul>
+						<li class="box"><img src="http://static.naver.net/newsstand/2016/0602/mediatoday/142301/005.jpg" alt="">
+							<span><a href="">"카카오, 카톡링크 무단 수집 공식사과</a></span>
+						</li>
+						<li class="box"><img src="http://static.naver.net/newsstand/2016/0602/mediatoday/142301/004.jpg" alt="">
+							<span><a href="">"pv높으면 상 줍니다" 기자들은 시큰둥</a></span>
+						</li>
+						<li class="box"><img src="http://static.naver.net/newsstand/2016/0602/mediatoday/142301/007.jpg" alt="">
+							<span><a href="">"서울 엑소더스, 인구 1000만 깨졌다.</a></span>
+						</li>
+						<li class="box"><img src="http://static.naver.net/newsstand/2016/0602/mediatoday/142301/006.jpg" alt="">
+							<span><a href="">201년 YTN 파업 4년만에 무죄 판결</a></span>
+						</li>
+						<li class="box"><img src="http://static.naver.net/newsstand/2016/0602/mediatoday/142301/009.png" alt="">
+							<span><a href="">조선동아만 "중국이 북핵 승인"비핵화 언급</a></span>
+						</li>
+						<li class="box"><img src="http://static.naver.net/newsstand/2016/0602/mediatoday/142301/008.jpg" alt="">
+							<span><a href="">UN이 속았나? 인권실태 발표에 기자들도 갸</a></span>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="kind">
+			<div class="kind_box"><img src="http://static.naver.net/newsstand/up/2014/0715/079.gif" alt=""></div>
+			<div class="kind_box"><img src="http://static.naver.net/newsstand/up/2014/0715/079.gif" alt=""></div>
+			<div class="kind_box"><img src="http://static.naver.net/newsstand/up/2014/0715/079.gif" alt=""></div>
+			<div class="kind_box"><img src="http://static.naver.net/newsstand/up/2014/0715/079.gif" alt=""></div>
+			<div class="kind_box"><img src="http://static.naver.net/newsstand/up/2014/0715/079.gif" alt=""></div>
+			<div class="kind_box"><img src="http://static.naver.net/newsstand/up/2014/0715/079.gif" alt=""></div>
+			<div class="kind_box"><img src="http://static.naver.net/newsstand/up/2014/0715/079.gif" alt=""></div>
+			<div class="kind_box"><img src="http://static.naver.net/newsstand/up/2014/0715/079.gif" alt=""></div>
+			<div class="kind_box"><img src="http://static.naver.net/newsstand/up/2014/0715/079.gif" alt=""></div>
+			<div class="kind_box"><img src="http://static.naver.net/newsstand/up/2014/0715/079.gif" alt=""></div>
+			<div class="kind_box"><img src="http://static.naver.net/newsstand/up/2014/0715/079.gif" alt=""></div>
+			<div class="kind_box"><img src="http://static.naver.net/newsstand/up/2014/0715/079.gif" alt=""></div>
+			<div class="kind_box"><img src="http://static.naver.net/newsstand/up/2014/0715/079.gif" alt=""></div>
+			<div class="kind_box"><img src="http://static.naver.net/newsstand/up/2014/0715/079.gif" alt=""></div>
+			<div class="kind_box"><img src="http://static.naver.net/newsstand/up/2014/0715/079.gif" alt=""></div>
+			<div class="kind_box"><img src="http://static.naver.net/newsstand/up/2014/0715/079.gif" alt=""></div>
+			<div class="kind_box"><img src="http://static.naver.net/newsstand/up/2014/0715/079.gif" alt=""></div>
+			<div class="kind_box"><img src="http://static.naver.net/newsstand/up/2014/0715/079.gif" alt=""></div>
+			<div class="kind_box"><img src="http://static.naver.net/newsstand/up/2014/0715/079.gif" alt=""></div>
+			<div class="kind_box"><img src="http://static.naver.net/newsstand/up/2014/0715/079.gif" alt=""></div>
+
+		</div>
+		<div class="footer">
+			<p>공지사항 언론사별 주요기사 메인 노출 안내</p>
+			<p>본 콘텐츠의 저작권은 제공처 또는 네이버에 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 법적책임을 질 수 있습니다.</p>
+			<p>copyright naver corp. All Right Reserved</p>
+		</div>
+	</div>
+</body>
+</html>

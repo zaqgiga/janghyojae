@@ -1,0 +1,140 @@
+*{margin:0; padding:0;}
+html, body{height:100%;}
+ul, li{list-style: none;}
+
+
+@font-color:#99E000;
+@outline:1px red solid;
+@imgurl:"../images/";
+.ol(@color:red)
+{outline:0px @color solid;}
+
+
+
+
+.back{
+	background-image: url(../images/bg-pc.jpg);
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	height:100%;
+}
+	.header{
+		height:100px;
+		background-color:rgba(255, 255, 255, 0.1);
+		box-shadow: 0 0.2px 5px #555;
+		.logo{
+			float:left;
+			margin-left:45px;
+
+			a{
+				display:block;
+				background-image: url(../images/jj.png);
+				background-repeat: no-repeat;
+				background-position: center;
+				width:104px;
+				height:100px;
+				transition: 1s;
+				&:hover{transform:rotateY(180deg);}
+			} //header logo a end
+		} //header logo end
+		.nav{
+			float:right;
+			ul { font-size:0px;
+					li{
+						display:inline-block; vertical-align:top;
+						a {
+							display:block; font-size:16px; color:#000; text-decoration:none; padding:40px 20px;
+							transition:0.3s;
+							&:hover {color:@font-color; border-top:4px solid @font-color;}
+
+						}
+					} // header nav ul li a end
+				button{
+					.ol();
+					display: none;
+				}// .header .nav .ul button end
+			} //header nav ul
+		} // header nav
+	} //header
+
+	@media screen and (max-width:905px){
+		.header .nav .ul .li{
+			display: none;
+		}
+		.header .nav .ul button{
+			display: block;
+			width:100px;
+			height:21px;
+			padding:20px 50px;
+			background-color:@font-color;
+		}
+
+	}
+
+	// -------------------------------------------header--------------------------------------------------
+
+.footer{
+	display: block;
+	width:100%;
+	height:57px;
+	position: fixed; bottom:0;
+	background-color:rgba(0, 0, 0, 0.5);
+} //footer end
+.jyp_logo{
+	width:115px;
+	height:45px;
+	margin: 5px 0 0 7%;
+	background-image: url("../images/jyplogo-w.png");
+	background-repeat:no-repeat;
+	float:left;
+} //footer jyp_logo end
+.sns{
+	float:right;
+	ul>li{
+		float:left;
+		margin-top:14px;
+		margin-left:10px;
+
+
+
+			.twitter{
+				width:30px;
+				height:30px;
+				overflow: hidden;
+				display:inline-block;
+				background-color: #fff;
+				border-radius: 20%;
+				background-image: url(../images/twitter.png);
+
+			} // twitter end
+			.facebook{
+				width:30px;
+				height:30px;
+				overflow: hidden;
+				display: inline-block;
+				background-color: #fff;
+				border-radius: 20%;
+				background-image: url(../images/facebook.png);
+			} //facebook end
+			.youtube{
+				width:30px;
+				height:30px;
+				overflow: hidden;
+				display: inline-block;
+				background-color: #fff;
+				border-radius: 20%;
+				background-image: url(../images/youtube.png);
+				background-repeat: no-repeat;
+				margin-right:135px;
+			} //youtube end
+	} //ul>li end
+} //sns end
+
+
+
+
+
+
+
+	// --------------------------------------------back-------------------------------------------------

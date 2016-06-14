@@ -36,7 +36,7 @@ li {
   transition: 1s;
 }
 .header .logo a:hover {
-  transform: rotatey(180deg);
+  transform: rotateY(180deg);
 }
 .header .nav {
   float: right;
@@ -61,7 +61,7 @@ li {
   border-top: 4px solid #99e000;
 }
 .header .nav ul button {
-  outline: 0px #ff0000 solid;
+  outline: 0px red solid;
   display: none;
 }
 @media screen and (max-width: 768px) {

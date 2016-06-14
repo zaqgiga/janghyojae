@@ -11,19 +11,19 @@ li {
   list-style: none;
 }
 .wrapper {
-  outline: 1px #ff0000 solid;
+  outline: 1px red solid;
   width: 900px;
   height: 540px;
   margin: 0 auto;
 }
 .header {
-  outline: 1px #ff0000 solid;
+  outline: 1px red solid;
   width: 840px;
   height: 111px;
   margin: 20px auto 0;
 }
 .header .logo {
-  outline: 1px #ff0000 solid;
+  outline: 1px red solid;
   float: left;
   width: 260px;
   height: 55px;
@@ -31,7 +31,7 @@ li {
   background-image: url(http://static.naver.net/newsstand/up/2013/0813/nsd114522986.gif);
 }
 .header .banner {
-  outline: 1px #ff0000 solid;
+  outline: 1px red solid;
   float: right;
   width: 468px;
   height: 60px;
@@ -39,25 +39,25 @@ li {
   background-image: url(http://adcreative.naver.com/ad3/1004/1004874/468_60_11446516899395.jpg);
 }
 .header .usercontent {
-  outline: 1px #ff0000 solid;
+  outline: 1px red solid;
   width: 300px;
   height: 25px;
   clear: left;
 }
 .section {
-  outline: 1px #ff0000 solid;
+  outline: 1px red solid;
   width: 840px;
   height: 380px;
   margin: 20px auto 0;
 }
 .section .left {
-  outline: 1px #ff0000 solid;
+  outline: 1px red solid;
   float: left;
   width: 575px;
   height: 380px;
 }
 .section .left .main {
-  outline: 1px #0000ff solid;
+  outline: 1px blue solid;
   float: left;
   width: 380px;
   height: 380px;
@@ -65,7 +65,7 @@ li {
   background-size: cover;
 }
 .section .left .sub1 {
-  outline: 1px #ff0000 solid;
+  outline: 1px red solid;
   width: 180px;
   height: 180px;
   display: inline-block;
@@ -74,7 +74,7 @@ li {
   background-size: cover;
 }
 .section .left .sub2 {
-  outline: 1px #ff0000 solid;
+  outline: 1px red solid;
   width: 180px;
   height: 180px;
   margin-left: 15px;
@@ -84,18 +84,24 @@ li {
   display: inline-block;
 }
 .section .right {
-  outline: 1px #ff0000 solid;
+  outline: 1px red solid;
   float: right;
   width: 265px;
   height: 380px;
 }
 .section .right ul {
-  outline: 1px #ff0000 solid;
+  outline: 1px red solid;
 }
 .section .right ul li {
-  outline: 1px #ff0000 solid;
+  outline: 1px red solid;
   float: right;
   display: inline-block;
   width: 120px;
   height: 121px;
+  margin-top: 5px;
+}
+.section .right ul .two,
+.section .right ul .fore,
+.section .right ul .six {
+  margin-right: 15px;
 }

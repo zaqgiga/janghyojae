@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>부트스트랩 101 템플릿</title>
+
+    <!-- 부트스트랩 -->
+    <link href="li/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+		a{text-decoration: none;}
+      .navbar-brand{
+        background-image:url(http://blossomenter.com/actors/song_joongki/wp-content/themes/star/images/gnb_logo_x2.png);
+        -webkit-background-size: 146px 65px;
+        background-size: 146px 65px;
+        width: 146px;
+		height: 37px;
+      }
+	 main{
+	 	background-position: right;
+	  	background-image: url(http://blossomenter.com/actors/song_joongki/wp-content/themes/star/images/bio_bg.jpg);
+		background-repeat: no-repeat;
+		height: 700px;
+		margin-top:50px;
+		padding:0px 0 100px;
+	  }
+
+      /*.navbar-brand::before{
+        content:" ";
+        width:100px;
+        height:100px;
+        border:1px #F00 solid;
+      }*/
+	.title{
+	  border-bottom:3px #666 solid;}
+
+	.text-lowercase{
+		color:#888;
+	}
+	.information{
+		margin-top:60px;
+	}
+	.information strong{
+		font-size: 2em;
+		color:#888;
+	}
+	.information dt{
+		float:left;
+		margin-right:10px;
+		color:#666;
+	}
+	.information dd{
+		color:#000;
+	}
+	.information dt, .information dd{
+		line-height:110%; font-size:0.75em;
+	}
+
+	.footer{
+		border-top:1px #ccc solid;
+	}
+	.footer address{
+		font-size:0.2em;
+		padding:10px 0;
+		color:#777;
+		line-height: 2px;
+	}
+	.footer address a{
+		color:#777;
+	}
+
+
+
+	@media (min-width: 992px){
+		.container {
+			width:788px;
+		}
+			.navbar.gnb{
+			margin-top:35px;
+			height:70px;
+			border:0px red solid;
+		}
+
+	}
+	@media (min-width: 768px){
+		.navbar.gnb{
+			margin-top:35px;
+			height: 70px;
+			outline:0px red solid;
+		}
+
+
+	}
+
+
+    </style>
+
+
+  </head>
+  <body>
+
+
+    <div class="container">
+    <!-- imghttp://blossomenter.com/actors/song_joongki/wp-content/themes/star/images/header_logo_x2.png -->
+      <nav class="navbar gnb navbar-default">
+		<div class="container-fluid">
+	        <div class="navbar-header">
+	        	<a class="navbar-brand" href="#"></a>
+
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#aaa">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+	        </div>
+			<div class="collapse navbar-collapse" id="aaa">
+				<ul class="nav navbar-nav pull-right">
+			        <li><a href="#">biography</a></li>
+			        <li><a href="#">filmography</a></li>
+			        <li><a href="#">star media</a></li>
+			        <li><a href="#">schedule</a></li>
+		        </ul>
+			</div>	
+		</div>
+
+
+
+      </nav>
+
+	<div class="title">
+		<h3 class="text-right">SONG JOONG KI</h3>
+	</div>
+	<span class="subtitle text-uppercase">
+		<strong>BIOGRAPHY</strong>
+	</span>
+
+
+
+
+	<main>
+	<div class="information">
+		<strong>송중기 <span style="text-capitalize">song joong ki</span></strong>
+		<dl>
+			<dt>생년월일</dt>
+			<dd>1985년 9월 19일</dd>
+		</dl>
+		<dl>
+			<dt>신체사이즈</dt>
+			<dd>178cm, 65kg</dd>
+		</dl>
+		<dl>
+			<dt>혈액형</dt>
+			<dd> A형</dd>
+		</dl>
+		<dl>
+			<dt>데뷔</dt>
+			<dd>2008년 영화 [쌍화점]</dd>
+		</dl>
+		<dl>
+			<dt>학력</dt>
+			<dd>성균관대학교 경영학</dd>
+		</dl>
+
+
+
+
+
+	</div>
+</main>
+<div class="footer">
+	<address>
+
+	   <div class="pull-left text-left">
+		 <p>6F, UNO B/D, 112-18, NONHYEON-DONG, GANGNAM-GU, SEOUL, KOREA</p>
+		 <p>TEL. +82-2-558-5320</p>
+	   </div>
+
+	   <div class="pull-right text-right">
+		 <p>COPYRIGHT BLOSSOM CORP. ALL RIGHT RESERVED</p>
+		 <p>DESIGN BY<a href=""> SWEATER INTERACTIVE</a></p>
+	   </div>
+	 </address>
+</div>
+	</div>  <!-- .container end -->
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="li/js/bootstrap.min.js"></script>
+  </body>
+</html>

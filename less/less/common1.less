@@ -1,8 +1,11 @@
+	// 공통
 *{margin:0; padding:0;}
 html, body{height:100%;}
 ul, li{list-style: none;}
 
+// ---------------------------------------------
 
+@tablet:768px;
 @font-color:#99E000;
 @outline:1px red solid;
 @imgurl:"../images/";
@@ -58,17 +61,17 @@ ul, li{list-style: none;}
 		} // header nav
 	} //header
 
-	@media screen and (max-width:905px){
-		.header .nav .ul .li{
+	@media screen and (max-width:@tablet){
+		.li{
 			display: none;
-		}
-		.header .nav .ul button{
+		} // .header .nav .ul .li end //
+		button{
 			display: block;
 			width:100px;
 			height:21px;
 			padding:20px 50px;
 			background-color:@font-color;
-		}
+		} // .header .nav .ul button end //
 
 	}
 
@@ -80,7 +83,7 @@ ul, li{list-style: none;}
 	height:57px;
 	position: fixed; bottom:0;
 	background-color:rgba(0, 0, 0, 0.5);
-} //footer end
+} // .footer end
 .jyp_logo{
 	width:115px;
 	height:45px;
@@ -88,7 +91,7 @@ ul, li{list-style: none;}
 	background-image: url("../images/jyplogo-w.png");
 	background-repeat:no-repeat;
 	float:left;
-} //footer jyp_logo end
+} // .footer .jyp_logo end
 .sns{
 	float:right;
 	ul>li{
@@ -107,7 +110,7 @@ ul, li{list-style: none;}
 				border-radius: 20%;
 				background-image: url(../images/twitter.png);
 
-			} // twitter end
+			} // .twitter end
 			.facebook{
 				width:30px;
 				height:30px;
@@ -116,7 +119,7 @@ ul, li{list-style: none;}
 				background-color: #fff;
 				border-radius: 20%;
 				background-image: url(../images/facebook.png);
-			} //facebook end
+			} // .facebook end
 			.youtube{
 				width:30px;
 				height:30px;
@@ -127,9 +130,9 @@ ul, li{list-style: none;}
 				background-image: url(../images/youtube.png);
 				background-repeat: no-repeat;
 				margin-right:135px;
-			} //youtube end
-	} //ul>li end
-} //sns end
+			} // .youtube end
+	} // ul>li end
+} // .sns end
 
 
 

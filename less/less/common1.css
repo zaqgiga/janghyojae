@@ -64,11 +64,11 @@ li {
   outline: 0px #ff0000 solid;
   display: none;
 }
-@media screen and (max-width: 905px) {
-  .header .nav .ul .li {
+@media screen and (max-width: 768px) {
+  .li {
     display: none;
   }
-  .header .nav .ul button {
+  button {
     display: block;
     width: 100px;
     height: 21px;

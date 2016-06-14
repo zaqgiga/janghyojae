@@ -1,0 +1,130 @@
+	// <공 통>
+*{
+	margin:0; padding:0;
+}
+html, body{
+	height:100%;
+}
+ul, li{
+	list-style: none;
+}
+	// 변수
+// -------------------------------------
+
+.ol(@color:red){outline:1px @color solid;}
+
+// -------------------------------------
+
+.wrapper{
+	.ol();
+	width:900px;
+	height:540px;
+	margin:0 auto;}
+
+.header{
+	.ol();
+	width:840px;
+	height:111px;
+	margin:20px auto 0;
+	.logo{
+		.ol();
+		float:left;
+		width:260px;
+		height:55px;
+		margin-top:20px;
+		background-image: url(http://static.naver.net/newsstand/up/2013/0813/nsd114522986.gif);
+	}
+	.banner{
+		.ol();
+		float:right;
+		width:468px;
+		height:60px;
+		margin-top:33px;
+		background-image: url(http://adcreative.naver.com/ad3/1004/1004874/468_60_11446516899395.jpg);
+	}
+	.usercontent{
+		.ol();
+		width:300px;
+		height:25px;
+		clear: left;
+	}
+}
+.section{
+	.ol();
+	width: 840px;
+	height: 380px;
+	margin:20px auto 0;
+	.left{
+		.ol();
+		float:left;
+		width: 575px;
+		height: 380px;
+		.main{
+			.ol(blue);
+			float:left;
+			width: 380px;
+			height: 380px;
+			background-image: url(http://static.naver.net/newsstand/2016/0614/mediatoday/085857/001.jpg);
+			background-size: cover;
+		} //.section .left .main end
+		.sub1{
+			.ol();
+			width: 180px;
+			height: 180px;
+			display:inline-block;
+			margin-left:15px;
+			background-image: url(http://static.naver.net/newsstand/2016/0614/mediatoday/085857/002.jpg);
+			background-size: cover;
+
+		} // .section .left .sub1 end
+		.sub2{
+			.ol();
+			width: 180px;
+			height: 180px;
+			margin-left:15px;
+			margin-top:15px;
+			background-image: url(http://static.naver.net/newsstand/2016/0614/mediatoday/085857/003.jpg);
+			background-size: cover;
+			display:inline-block;
+		} // .section .left .sub2 end
+	} //.section .left end
+	.right{
+		.ol();
+		float:right;
+		width: 265px;
+		height: 380px;
+		ul{
+			.ol();
+
+			li{
+				.ol();
+				float:right;
+				display: inline-block;
+				width: 120px;
+				height: 121px;
+			}
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	} //.right end
+} // .section end

@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+ul,
+li {
+  list-style: none;
+}
+.wrapper {
+  outline: 1px #ff0000 solid;
+  width: 900px;
+  height: 540px;
+  margin: 0 auto;
+}
+.header {
+  outline: 1px #ff0000 solid;
+  width: 840px;
+  height: 111px;
+  margin: 20px auto 0;
+}
+.header .logo {
+  outline: 1px #ff0000 solid;
+  float: left;
+  width: 260px;
+  height: 55px;
+  margin-top: 20px;
+  background-image: url(http://static.naver.net/newsstand/up/2013/0813/nsd114522986.gif);
+}
+.header .banner {
+  outline: 1px #ff0000 solid;
+  float: right;
+  width: 468px;
+  height: 60px;
+  margin-top: 33px;
+  background-image: url(http://adcreative.naver.com/ad3/1004/1004874/468_60_11446516899395.jpg);
+}
+.header .usercontent {
+  outline: 1px #ff0000 solid;
+  width: 300px;
+  height: 25px;
+  clear: left;
+}
+.section {
+  outline: 1px #ff0000 solid;
+  width: 840px;
+  height: 380px;
+  margin: 20px auto 0;
+}
+.section .left {
+  outline: 1px #ff0000 solid;
+  float: left;
+  width: 575px;
+  height: 380px;
+}
+.section .left .main {
+  outline: 1px #0000ff solid;
+  float: left;
+  width: 380px;
+  height: 380px;
+  background-image: url(http://static.naver.net/newsstand/2016/0614/mediatoday/085857/001.jpg);
+  background-size: cover;
+}
+.section .left .sub1 {
+  outline: 1px #ff0000 solid;
+  width: 180px;
+  height: 180px;
+  display: inline-block;
+  margin-left: 15px;
+  background-image: url(http://static.naver.net/newsstand/2016/0614/mediatoday/085857/002.jpg);
+  background-size: cover;
+}
+.section .left .sub2 {
+  outline: 1px #ff0000 solid;
+  width: 180px;
+  height: 180px;
+  margin-left: 15px;
+  margin-top: 15px;
+  background-image: url(http://static.naver.net/newsstand/2016/0614/mediatoday/085857/003.jpg);
+  background-size: cover;
+  display: inline-block;
+}
+.section .right {
+  outline: 1px #ff0000 solid;
+  float: right;
+  width: 265px;
+  height: 380px;
+}
+.section .right ul {
+  outline: 1px #ff0000 solid;
+}
+.section .right ul li {
+  outline: 1px #ff0000 solid;
+  float: right;
+  display: inline-block;
+  width: 120px;
+  height: 121px;
+}
